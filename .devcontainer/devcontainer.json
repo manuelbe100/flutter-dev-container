@@ -10,7 +10,14 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"dart-code.dart-code",
-		"dart-code.flutter"
+		"dart-code.flutter",
+		"Nash.awesome-flutter-snippets",
+		"mhutchie.git-graph"
+	],
+	"runArgs": [
+		"--privileged",
+		"-v",
+		"/dev/bus/usb:/dev/bus/usb"
 	],
 	// This command create an example project after the container is created.
 	"postCreateCommand": "flutter create test_project",
